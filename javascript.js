@@ -25,13 +25,13 @@ app.post('/nombre', urlencodedParser, (req, res) => {
 });
 
 //Insertar dentro de una coleccion de una BD
-app.get('/primerdato', (req, res) => {
+app.post('/primerdato', urlencodedParser, (req, res) => {
     MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("Empresa");
         const objetoDatos = {
-            "nombre": req.body.elnombre,
-            "direccion": req.body.direccion
+            nombre: req.body.elnombre,
+            direccion: req.body.direccion
         }
         
         dbo.collection("Clientes").insertOne(objetoDatos, function(err, res) {
