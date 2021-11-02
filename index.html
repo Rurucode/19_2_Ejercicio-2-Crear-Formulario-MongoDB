@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<h1>Node JS Express Form </h1>
+<body>
+    
+    <form action="/nombre" method="POST" id="nombre">
+        <label for="Nombre">Introduce el nombre de tu <b>BASE DE DATOS</b></label>
+        <input name="nombre" type="text" placeholder="Nombre" id="Nombre" />
+    
+        <label for="colecccion">Introduce el nombre de tu <b>COLECCION</b></label>
+        <input name="colecccion" type="text"  id="colecccion" placeholder="Colecccion" />
+        <input type="submit" value="Pulsame y yo lo envio ;) " id="button-blue"/>
+    </form>
+    
+    <form action="/primerdato" method="POST" id="aaa">
+         
+        <label for="primerdato">Introduce aquí tu <b>nombre</b></label>
+        <input name="elnombre" type="text"  id="primerdato" placeholder="Primerdato">
+        
+        <label for="primerdato">Introduce aquí tu <b>direccion</b></label>
+        <input name="direccion" type="text"  id="bbb" placeholder="Primerdato">
+        
+        <input type="submit" value="Pulsame y yo lo envio ;) " id="button-blue"/>
+    </form>
+
+    
+    
+
+    <script src="./javascript.js"></script>
+</body>
+</html>
